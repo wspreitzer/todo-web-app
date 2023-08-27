@@ -5,7 +5,7 @@ def write_todos(todos_arg, filename="todos.txt"):
 
 
 prompt = "Type add, show, edit, complete or exit: "
-with open("todos.txt", "r") as file:
+with open("files/todos.txt", "r") as file:
     todos = file.readlines()
 
 while True:
