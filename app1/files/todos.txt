@@ -4,4 +4,3 @@ Eat breakfast
 Learn Python
 Learn SpringBoot Mircroservices
 Learn Java
-Make Lunch
