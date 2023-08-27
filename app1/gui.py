@@ -4,6 +4,7 @@ import time
 
 todos = get_todos()
 enter = True
+sg.theme("Black")
 clock = sg.Text("", key="clock")
 label = sg.Text("Type in a to-do")
 input_box = sg.InputText(tooltip="Enter todo", key="todo")
