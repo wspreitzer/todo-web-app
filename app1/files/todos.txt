@@ -1,3 +1,5 @@
 Shower
 Make breakfast
 Eat breakfast
+Learn Python
+Learn Mircroservices
