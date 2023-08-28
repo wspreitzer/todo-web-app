@@ -1,6 +1,6 @@
 import streamlit as st
 
-FILEPATH = "files/todos.txt"
+FILEPATH = "../files/todos.txt"
 
 
 def get_todos(filename=FILEPATH):
