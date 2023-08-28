@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 import zipfile as zf
-from zip_creator import make_archive
+from zip_functions import make_archive
 
 file_label = sg.Text("Select files to compress")
 dest_label = sg.Text("Select destination folder")
