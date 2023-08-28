@@ -1,5 +1,0 @@
-Learn SpringBoot Microservices
-Learn JPA Data
-Learn AWS
-
-Learn Azure

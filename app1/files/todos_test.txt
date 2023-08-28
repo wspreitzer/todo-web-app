@@ -1,6 +1,0 @@
-Shower
-Make breakfast
-Eat breakfast
-Learn Python
-Learn SpringBoot Mircroservices
-Learn Java
