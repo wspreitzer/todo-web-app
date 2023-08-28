@@ -1,5 +1,5 @@
 import streamlit as st
-from functions import get_todos, write_todos
+from functions import get_todos, add_todo
 
 todos = get_todos()
 
@@ -12,4 +12,7 @@ st.checkbox("Buy groceries")
 for todo in todos:
     st.checkbox(todo)
 
-st.text_input("", placeholder="Add new todo...")
+st.text_input("Enter Todo", placeholder="Add new todo...", on_change=add_todo,
+              key="new_todo")
+
+st.session_state

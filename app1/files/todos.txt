@@ -1,2 +1,12 @@
 Wake up
 Make Breakfast
+Clean the house
+Learn Java
+Learn Python
+Learn C++
+Learn C#
+Learn SpringBoot Microservices
+Learn JPA Data
+Learn AWS
+
+Learn Azure
