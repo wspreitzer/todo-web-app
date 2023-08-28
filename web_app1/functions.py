@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 
+FILEPATH = "todos.txt"
 
 
 def get_todos():
