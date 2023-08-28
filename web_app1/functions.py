@@ -1,13 +1,13 @@
 import streamlit as st
 import os
-FILEPATH = "todos.txt"
+FILEPATH = "/web_app1/files/todos.txt"
 
 
 def get_todos():
     """ Read a text file and return the list of
     to-do items.
     """
-    filepath = os.path.join(os.getcwd(), "todos.txt")
+    filepath = os.path.join(os.getcwd(), "files/todos.txt")
     with open(filepath, 'r') as file:
         todos = [line.strip() for line in file.readlines()]
         return todos
