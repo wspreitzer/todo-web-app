@@ -7,9 +7,8 @@ def get_todos():
     """ Read a text file and return the list of
     to-do items.
     """
-    filepath = os.path.join(os.getcwd(), "files/todos.txt")
-    with open(filepath, 'r') as file:
-        todos = [line.strip() for line in file.readlines()]
+    with open(FILEPATH, 'r') as file:
+        todos = file.readlines()
         return todos
 
 
