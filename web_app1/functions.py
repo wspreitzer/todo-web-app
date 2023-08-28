@@ -1,14 +1,15 @@
 import streamlit as st
-
+import os
 FILEPATH = "todos.txt"
 
 
-def get_todos(filename=FILEPATH):
+def get_todos():
     """ Read a text file and return the list of
     to-do items.
     """
-    with open(filename, 'r') as file:
-        todos = file.readlines()
+    filepath = os.path.join(os.getcwd(), "todos.txt")
+    with open(filepath, 'r') as file:
+        todos = [line.strip() for line in file.readlines()]
         return todos
 
 
@@ -23,4 +24,3 @@ def add_todo():
     todo = st.session_state["new_todo"]+"\n"
     todos.append(todo)
     write_todos(todos)
-
