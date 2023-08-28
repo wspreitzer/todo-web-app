@@ -1,6 +1,5 @@
 import streamlit as st
 import os
-FILEPATH = "/web_app1/files/todos.txt"
 
 
 def get_todos():
