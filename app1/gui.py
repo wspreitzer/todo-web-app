@@ -1,6 +1,11 @@
 from functions import get_todos, write_todos
 import PySimpleGUI as sg
 import time
+import os
+
+if not os.path.exists("../files/todos.txt"):
+    with open("../files/todos.txt", "w") as file:
+        pass
 
 todos = get_todos()
 enter = True
@@ -39,9 +44,7 @@ while True:
             try:
                 todo_to_edit = values["todos"][0]
                 new_todo = values["todo"]
-                if new_todo.endswith("\n"):
-                    new_todo = new_todo
-                else:
+                if not new_todo.endswith("\n"):
                     new_todo = new_todo + "\n"
                 index = todos.index(todo_to_edit)
                 todos[index] = new_todo
